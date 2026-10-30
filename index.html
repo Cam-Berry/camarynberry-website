@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camaryn Berry Marketing Consulting</title>
+<meta name="description" content="Practical, no-nonsense B2B and B2C marketing support from Camaryn Berry: positioning, go-to-market, demand generation, content and campaigns.">
+<meta property="og:title" content="Camaryn Berry Marketing Consulting">
+<meta property="og:description" content="Expert, practical, no-nonsense marketing support.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://camarynberry.com/">
+<meta property="og:locale" content="en_GB">
+<meta name="theme-color" content="#0E0147">
+<meta property="og:image" content="https://camarynberry.com/logo.png">
+<link rel="canonical" href="https://camarynberry.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amber: #FFBE59;
+    --amber-soft: #FFF1D9;
+    --ink: #0E0147;
+    --ink-2: #4B4766;
+    --paper: #FBF8F3;
+    --card: #FFFFFF;
+    --line: #E8E1D6;
+    --radius: 14px;
+    --wrap: 1100px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 17px/1.65 "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 650; line-height: 1.15; margin: 0 0 .5em; }
+  h1 { font-size: clamp(2.3rem, 5.5vw, 4rem); letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); letter-spacing: -0.01em; }
+  h3 { font-size: 1.3rem; }
+  p { margin: 0 0 1em; }
+  a { color: inherit; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+  .eyebrow { font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 1rem; display: inline-flex; align-items: center; gap: .6rem; }
+  .eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--amber); border-radius: 2px; }
+  section { padding: 96px 0; }
+
+  /* Header */
+  header { position: sticky; top: 0; z-index: 10; background: rgba(251,248,243,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .brand { font-family: "Fraunces", Georgia, serif; font-weight: 650; font-size: 1.15rem; text-decoration: none; display: flex; align-items: center; gap: .6rem; }
+  .brand-mark { width: 38px; height: 38px; border-radius: 10px; background: var(--ink); display: grid; place-items: center; }
+  .brand-mark img { width: 22px; height: 22px; }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 28px; }
+  nav a { text-decoration: none; font-size: .95rem; font-weight: 500; color: var(--ink-2); }
+  nav a:hover { color: var(--ink); }
+  .btn { display: inline-block; background: var(--ink); color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem; padding: 13px 24px; border-radius: 999px; transition: transform .15s ease, background .15s ease; }
+  .btn:hover { transform: translateY(-1px); background: #1F1166; }
+  .btn-amber { background: var(--amber); color: var(--ink); }
+  .btn-amber:hover { background: #FFB03A; }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: #fff; }
+  @media (max-width: 780px) { nav ul { display: none; } }
+
+  /* Hero */
+  .hero { padding: 110px 0 100px; position: relative; overflow: hidden; }
+  .hero::after { content: ""; position: absolute; right: -140px; top: -120px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, var(--amber) 0%, rgba(255,189,89,0) 68%); opacity: .55; z-index: -1; }
+  .hero h1 em { font-style: normal; background: linear-gradient(transparent 62%, var(--amber) 62%); }
+  .hero p.lead { font-size: 1.2rem; color: var(--ink-2); max-width: 620px; margin: 1.2rem 0 2rem; }
+  .hero .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: start; }
+  .portrait { position: relative; }
+  .portrait img, .portrait .fallback { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 22px; display: block; }
+  .portrait .fallback { background: var(--amber-soft); display: grid; place-items: center; font-family: "Fraunces", serif; font-size: 5rem; color: var(--ink); }
+  .portrait img { background: #E9E6E1; }
+  .portrait::before { content: ""; position: absolute; inset: 18px -18px -18px 18px; border: 3px solid var(--amber); border-radius: 22px; z-index: -1; }
+  .skills { list-style: none; padding: 0; margin: 1.5rem 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
+  .skills li { padding-left: 22px; position: relative; font-weight: 500; }
+  .skills li::before { content: ""; position: absolute; left: 0; top: .6em; width: 9px; height: 9px; border-radius: 50%; background: var(--amber); }
+  .note { font-size: .95rem; color: var(--ink-2); border-top: 1px solid var(--line); padding-top: 1.2rem; margin-top: 1.5rem; }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 48px; } .portrait { max-width: 380px; } .skills { grid-template-columns: 1fr; } }
+
+  /* Approach */
+  .approach { background: var(--ink); color: #fff; }
+  .approach .eyebrow { color: #CFCBE6; }
+  .approach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .approach p { color: #DCD9EE; }
+  .mantra { font-family: "Fraunces", serif; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.3; }
+  .mantra span { display: block; color: #9C96C4; }
+  .mantra strong { display: block; color: var(--amber); font-weight: 650; margin-top: .3em; }
+  @media (max-width: 860px) { .approach-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+  /* Services */
+  .intro { max-width: 640px; margin-bottom: 48px; }
+  .intro p { color: var(--ink-2); }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px 28px; }
+  .card .num { font-family: "Fraunces", serif; font-size: .95rem; color: var(--ink-2); margin-bottom: 1.2rem; display: inline-block; background: var(--amber-soft); padding: 4px 12px; border-radius: 999px; }
+  .card p { color: var(--ink-2); font-size: .97rem; }
+  .card ul { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .card li { font-size: .85rem; font-weight: 500; border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; background: var(--paper); }
+  @media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
+
+  /* Who */
+  .who { padding-top: 0; }
+  .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 2px solid var(--ink); }
+  .who-item { padding: 32px 28px 8px 0; }
+  .who-item + .who-item { padding-left: 28px; border-left: 1px solid var(--line); }
+  .who-item p { color: var(--ink-2); }
+  @media (max-width: 860px) { .who-grid { grid-template-columns: 1fr; } .who-item + .who-item { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); } }
+
+  /* Contact */
+  .contact { background: var(--amber); }
+  .contact-box { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; }
+  .contact .eyebrow::before { background: var(--ink); }
+  .contact p { font-size: 1.1rem; }
+  .contact-links { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+  .contact-links .btn { font-size: 1rem; }
+  @media (max-width: 860px) { .contact-box { grid-template-columns: 1fr; } }
+
+  footer { padding: 32px 0; font-size: .9rem; color: var(--ink-2); }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><span class="brand-mark"><img src="logo-mark.svg" alt=""></span>Camaryn Berry</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn">Get in touch</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Marketing consulting</div>
+      <h1>Expert, practical, <em>no-nonsense</em> marketing support.</h1>
+      <p class="lead">20+ years of brand, marketing and communications experience across B2B and B2C, helping technology businesses, start-ups and established teams get the fundamentals right and grow from there.</p>
+      <div class="actions">
+        <a href="#contact" class="btn btn-amber">Book a consultation</a>
+        <a href="#services" class="btn btn-ghost">How I can help</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="eyebrow">About</div>
+        <h2>International experience and perspective.</h2>
+        <p>I'm a commercially minded marketer with over 20 years of experience across small and large private enterprises, full-service creative agencies and cutting-edge technology start-ups.</p>
+        <p>I've worked in the USA, Europe, the Middle East and Australasia, with clients ranging from luxury hospitality and entertainment to professional services, healthcare, and high-tech hardware and software.</p>
+        <p>With experience in both B2C and B2B, I'm an end-to-end marketer with core skills in:</p>
+        <ul class="skills">
+          <li>Branding and positioning</li>
+          <li>Omnichannel campaign strategy</li>
+          <li>Content production and distribution</li>
+          <li>Growth marketing and B2B demand generation</li>
+          <li>Search marketing and advertising</li>
+          <li>Community and partnership development</li>
+        </ul>
+        <p class="note">I'm also proud to be part of the strategic communications team at <a href="https://kickdrumpartners.com/" target="_blank" rel="noopener">KickDrum Partners</a>, a leading fractional marketing and business development consultancy for technology businesses.</p>
+      </div>
+      <div class="portrait">
+        <img src="headshot.jpg" alt="Camaryn Berry" width="400" height="400" onerror="this.outerHTML='<div class=&quot;fallback&quot; role=&quot;img&quot; aria-label=&quot;Camaryn Berry&quot;>CB</div>'">
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="approach">
+    <div class="wrap approach-grid">
+      <div>
+        <div class="eyebrow">Why work with me</div>
+        <h2>Back to basics, then scale what works.</h2>
+        <p>I get the best results with partners who are prepared to invest in the fundamentals first: truly understanding your audience, honing your message and optimising deliverability.</p>
+        <p>I embrace technology and all the data and efficiency it brings. But the latest gimmick will never make up for poor planning, vague goals or a lack of understanding. Sound communication principles, layered with the right technology and a spark of creativity, remain the bedrock of authentic persuasion and growth.</p>
+      </div>
+      <p class="mantra">
+        <span>Trends will come and go.</span>
+        <span>Technology will continue to enthral us.</span>
+        <strong>Authentic connection will prevail.</strong>
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="intro">
+        <div class="eyebrow">Services</div>
+        <h2>How can I help?</h2>
+        <p>Whether you're taking something new to market, reaching new audiences or turning attention into revenue, I can plan it and deliver it.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="num">01 · Launch</span>
+          <h3>Launch a brand, product or service</h3>
+          <p>Ready to go to market but need help getting it there? I can help with:</p>
+          <ul><li>Ideal customer profiling</li><li>Positioning and messaging</li><li>GTM strategy</li><li>Branding</li><li>Website content</li><li>Social media</li><li>Email marketing</li><li>Paid advertising</li><li>Content production</li></ul>
+        </article>
+        <article class="card">
+          <span class="num">02 · Grow</span>
+          <h3>Grow your audience</h3>
+          <p>Need to grow your customer base or reach new audiences to keep targets on track? I can help with:</p>
+          <ul><li>Campaign planning</li><li>Paid advertising</li><li>Content distribution</li><li>Webinar production</li><li>Influencer outreach</li><li>Community engagement</li><li>Public relations</li><li>Email marketing</li><li>Referral programmes</li></ul>
+        </article>
+        <article class="card">
+          <span class="num">03 · Convert</span>
+          <h3>Improve lead conversion and sales</h3>
+          <p>Struggling to generate leads, keep your audience engaged or grow sales consistently? I can help with:</p>
+          <ul><li>Inbound marketing</li><li>Demand generation</li><li>Content syndication</li><li>Landing page optimisation</li><li>Email automation</li><li>Nurture campaigns</li><li>Sales enablement</li><li>Webinars</li><li>Analytics</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="who">
+    <div class="wrap">
+      <div class="who-grid">
+        <div class="who-item">
+          <h3>For start-ups</h3>
+          <p>Hands-on 101 support to establish your brand, marketing strategy and the platforms you need to grow, from plan to execution.</p>
+        </div>
+        <div class="who-item">
+          <h3>For small businesses</h3>
+          <p>For SMBs looking to expand or diversify growth channels, I'll help put the plans in place and run the campaigns.</p>
+        </div>
+        <div class="who-item">
+          <h3>For enterprises</h3>
+          <p>Already have a team? I slot in for project- or campaign-specific support to help you hit targets and deadlines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap contact-box">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>Let's get started.</h2>
+        <p>Ready to take the next step? Get in touch to talk through your marketing and business goals, and I'll get back to you soon.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:hello@camarynberry.com" class="btn">hello@camarynberry.com</a>
+        <a href="https://www.linkedin.com/in/camaryn-berry/" class="btn btn-ghost" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Camaryn Berry Marketing Consulting</span>
+    <span>Aarhus, Denmark</span>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
